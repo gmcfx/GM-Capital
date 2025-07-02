@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "profiles": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    "accounts": {
+      "$account_id": {
+        ".read": "auth != null && data.child('user_id').val() == auth.uid",
+        ".write": "auth != null && data.child('user_id').val() == auth.uid"
+      }
+    },
+    "positions": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    }
+  }
+}

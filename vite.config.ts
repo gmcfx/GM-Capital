@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => {
       strictPort: true,
     },
     build: {
-      outDir: 'build',
+      outDir: 'dist',
       emptyOutDir: true,
       target: "es2020",
       output: {
